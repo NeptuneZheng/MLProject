@@ -29,8 +29,8 @@ def FileReader(filepath):
     print(fitObj1)
 
     popt, pcon = curve_fit(fun,time,Qt)
-    a = popt[0]
-    b = popt[1]
+    a = popt[2]
+    b = popt[3]
     yvals = fun(time,a,b)
     ax = subplot(111)
     # print origing data in dashboard
